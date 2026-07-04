@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background:#F6F1EB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Georgia, serif;
+}
+
+.container{
+    text-align:center;
+    max-width:600px;
+    padding:40px;
+}
+
+h1{
+    font-size:64px;
+    color:#5A4A42;
+    margin-bottom:20px;
+    font-weight:normal;
+}
+
+p{
+    font-size:18px;
+    color:#7A6B63;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+button{
+    background:#B08D7A;
+    color:white;
+    border:none;
+    padding:14px 40px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px){
+
+    .container{
+        padding: 30px;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    button{
+        padding: 12px 30px;
+    }
+
+}
+.emoji{
+    font-size:40px;
+    margin-bottom:20px;
+}
+.book{
+    background:#fffaf5;
+    width:80%;
+    max-width:800px;
+    min-height:450px;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.page-number{
+    color:#9a8b7d;
+    margin-bottom:20px;
+}
+
+.book h1{
+    color:#5a4a42;
+    font-size:40px;
+    font-weight:400;
+    margin-bottom:40px;
+}
+.content{
+    color:#5a4a42;
+    font-size:20px;
+    line-height:2.2;
+    min-height:220px;
+}
+
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    margin-top:50px;
+}
+.line{
+    width:100%;
+    height:1px;
+    background:#d8c9bc;
+    margin:20px 0 40px 0;
+}
+.date{
+    color:#a79688;
+    font-size:14px;
+    margin-bottom:10px;
+    font-style:italic;
+}
+ul{
+    margin-left:30px;
+    margin-top:20px;
+    line-height:2;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+
+.message-box{
+    width:100%;
+    height:180px;
+    padding:15px;
+    border:1px solid #d8c9bc;
+    border-radius:10px;
+    font-size:16px;
+    resize:none;
+    background:#fff;
+    margin-top:25px;
+    margin-bottom:20px;
+}
+.message-box{
+    font-family:Georgia, serif;
+}
+
+.message-box::placeholder{
+    color:#a08f81;
+}
+
+.send-btn{
+    background:#b08d7a;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+body{
+    animation: turnPage 0.7s ease;
+}
+
+@keyframes turnPage{
+    0%{
+        opacity:0;
+        transform:translateX(40px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+#status-pesan{
+    margin-top:15px;
+    color:#8a7a6b;
+    font-style:italic;
+    opacity:0;
+    transition:0.3s;
+}
