@@ -96,8 +96,10 @@ button:hover{
 .content{
     color:#5a4a42;
     font-size:20px;
-    line-height:2.2;
+    line-height:1.5;
     min-height:220px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .navigation{
