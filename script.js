@@ -33,7 +33,7 @@ ${pesan}`;
     document.getElementById("status-pesan");
 
     status.innerHTML =
-    "✓ Pesanmu sudah terkirim.";
+    "Your message has been sent to the time capsule.✨";
     status.style.opacity = "1";
     document.getElementById("pesan").value = "";
 }

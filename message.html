@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +8,56 @@
 </head>
 <body>
 
-    <div class="book">
+<div class="book">
 
-        <div class="line"></div>
+    <div class="date">
+        July 2026
+    </div>
 
-        <h1>💌 Jika suatu saat kamu ingin bercerita</h1>
+    <div class="line"></div>
 
-        <div class="content">
+    <h1>✉️ Leave a Message</h1>
 
-            <p>
-                Aku tidak tahu apakah kamu akan kembali
-                ke halaman ini lagi atau tidak.
-            </p>
-            <p>
-                Tapi jika suatu saat kamu ingin bercerita,
-                tentang apa pun itu, ceritakan saja di sini.
-                Tidak ada yang akan mengetahuinya.
-            </p>
-           
-            <textarea id="pesan"
-          class="message-box"
-          placeholder="Jika ada sesuatu yang ingin kamu sampaikan, tuliskan di sini..."></textarea>
+    <div class="content">
 
-            <button class="send-btn" onclick="kirimPesan()">
-                Kirim
-            </button>
+        If you're reading this and you have something you want to tell me, you can leave it here.
+        <br><br>
 
-            <p id="status-pesan"></p>
+        It can be anything, your thoughts, your feelings, your story, or simply how your day has been.
+        There are no right or wrong words.
+        <br><br>
 
-        </div>
-
-        <div class="navigation">
-
-            <button onclick="window.location.href='page5.html'">
-                ←
-            </button>
-
-            <div></div>
-
-        </div>
+        And if one day you decide to come back and tell me something,
+        I'll be here, ready to listen.
 
     </div>
 
-    <script src="script.js"></script>
+    <textarea
+        id="pesan"
+        class="message-box"
+        placeholder="Write anything you want to tell me..."></textarea>
+
+    <button
+        class="send-btn"
+        onclick="kirimPesan()">
+        Send
+    </button>
+
+    <p id="status-pesan"></p>
+
+    <div class="navigation">
+
+        <button onclick="window.location.href='page5.html'">
+            ←
+        </button>
+
+        <div></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

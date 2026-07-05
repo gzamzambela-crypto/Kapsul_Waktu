@@ -5,12 +5,14 @@
 }
 
 body{
-    height:100vh;
+    min-height:100vh;
     background:#F6F1EB;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     font-family:Georgia, serif;
+    padding:40px 20px;
+    overflow-y:auto;
 }
 
 .container{
@@ -76,10 +78,10 @@ button:hover{
     background:#fffaf5;
     width:80%;
     max-width:800px;
-    min-height:450px;
     padding:50px;
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    margin:20px 0;
 }
 
 .page-number{
